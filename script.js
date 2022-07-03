@@ -38,6 +38,30 @@ function number(value){
 function equal(){
     ans.value=eval(ans.value)
 }
+function solve(){
+    str=ans.value;
+    
+    n=ans.value.length;
+    
+    a="",b="";
+    f=false;
+   
+    for(i=0;i<n;i++){
+        if(f==true){
+            b+=str[i];
+        }
+        if(str[i]=='^'){
+            f=true;
+         }
+        if(f==false){
+a+=str[i];
+        }
+        
+     
+    }
+    // alert(b);
+     ans.value=Math.pow(a,b);
+}
 ind=1;
 function modechange(){
     if(ind==1){
