@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Calculator</title>
+</head>
+<body><div id="mode" onclick="modechange()"><button id="mode1">Mode</button></div>
+    <div class="main">
+    <div name="result">
+    <input type="text" name="value" id="ans" placeholder="0">
+    </div>
+   <div id="table">
+    <div class="common">
+        <div><button value="sin" onclick="sin()">sin</button></div>
+        <div><button value="cos" onclick="cos()">cos</button></div>
+        <div><button value="tan" onclick="tan()">tan</button></div>
+        <div><button value="clear" onclick="clr()">Clear</button></div>
+    </div>
+    <div class="common">
+        <div><button value="expo" onclick="expo()">e^x</button></div>
+        <div><button value="sqrt" onclick="sqrt()">✓x</button></div>
+        <div><button value="cbrt" onclick="cbrt()">³✓x</button></div>
+        <div><button value="delete" onclick="dlt()">delete</button></div>
+    </div>
+    <div class="common">
+        <div><button value="%" onclick="number(value)">%</button></div>
+        <div><button value="sq" onclick="sq()">x^2</button></div>
+        <div><button value="cube" onclick="cube()">x^3</button></div>
+        <div><button value="/" onclick="number(value)">/</button></div>
+    </div>
+    <div class="common">
+        <div><button value="7" onclick="number(value)">7</button></div>
+        <div><button value="8" onclick="number(value)">8</button></div>
+        <div><button value="9" onclick="number(value)">9</button></div>
+        <div><button value="*" onclick="number(value)">*</button></div>
+    </div> 
+    <div class="common">
+        <div><button value="4" onclick="number(value)">4</button></div>
+        <div><button value="5" onclick="number(value)">5</button></div>
+        <div><button value="6" onclick="number(value)">6</button></div>
+        <div><button value="+" onclick="number(value)">+</button></div>
+    </div>  
+    <div class="common">
+        <div><button value="1" onclick="number(value)">1</button></div>
+        <div><button value="2" onclick="number(value)">2</button></div>
+        <div><button value="3" onclick="number(value)">3</button></div>
+        <div><button value="-" onclick="number(value)">-</button></div>
+    </div>  
+    <div class="common">
+        <div><button value="0" onclick="number(value)">0</button></div>
+        <div><button value="." onclick="number(value)">.</button></div>
+        <div><button value="+" onclick="number(value)">+</button></div>
+        <div><button value="=" onclick="equal()">=</button></div>
+    </div>  
+</div>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
